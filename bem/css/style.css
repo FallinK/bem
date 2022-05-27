@@ -1,0 +1,395 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular.eot");
+  src: local("☺"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: url("../fonts/Lato-Black.eot");
+  src: local("☺"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.ttf") format("truetype"), url("../fonts/Lato-Black.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo {
+  background: url("../img/BG-Header.jpg") -10px -120px no-repeat;
+  margin: 0;
+}
+
+.logo__body {
+  max-width: 754px;
+  margin: 0 auto;
+  padding: 150px 0 0 0;
+}
+
+.logo__picture {
+  text-align: center;
+  margin: 0 0 160px 0;
+}
+
+.logo__picture img {
+  width: 195px;
+  height: 123px;
+}
+
+.logo__title {
+  color: #ffffff;
+  font-family: "Lato";
+  text-align: center;
+  font-size: 26px;
+  letter-spacing: 4.15px;
+  position: relative;
+}
+
+.logo__title p:first-child {
+  color: #ffffff;
+  font-family: "Lato-Black";
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5.43px;
+  margin: 0 0 10px 0;
+}
+
+.logo__title p:last-child {
+  margin: 0 0 275px 0;
+}
+
+.logo__title:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  bottom: -60px;
+  height: 2px;
+  left: 50%;
+  background-color: #fff;
+  margin: 0 0 0 -45px;
+}
+
+.logo__button {
+  border: 1px solid #fff;
+}
+
+.logo__button:after {
+  content: '';
+  display: block;
+  margin: 0 0 75px 0;
+}
+
+.logo__arrow {
+  width: 17px;
+  height: 10px;
+  padding: 0 0 150px 0;
+  margin: 0 auto;
+}
+
+.logo__arrow:before {
+  content: '';
+  display: block;
+  margin: 0 0 75px 0;
+}
+
+.button {
+  width: 182px;
+  height: 47px;
+  border: 1px solid #fff;
+  margin: 0 auto 0 auto;
+}
+
+.button__text {
+  padding: 16px 0;
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.67px;
+}
+
+.menu__row {
+  max-width: 422px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu__row :first-child {
+  margin: 0 20px 0 0;
+}
+
+.menu__row :last-child {
+  margin: 0 0 0 20px;
+}
+
+.menu__row:before {
+  content: '';
+  margin: 22px 0 0 0;
+  display: block;
+}
+
+.menu__item {
+  display: inline-block;
+  margin: 0 20px;
+  max-width: 80px;
+  color: #3c3c3c;
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.menu .item-active {
+  color: #ada074;
+}
+
+.about__header:before {
+  content: '';
+  margin: 0px 0 154px 0;
+  display: block;
+}
+
+.about__body {
+  max-width: 823px;
+  margin: 0 auto;
+}
+
+.about__header {
+  margin: 0 0 65px 0;
+}
+
+.about__title {
+  margin: 0 0 30px 0;
+}
+
+.about__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  margin: 0 -15px;
+}
+
+.about__column {
+  padding: 0 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+}
+
+.about__text {
+  color: #868585;
+  font-family: Lato;
+  font-weight: 300;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about__text p {
+  margin: 15px 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.about__text :first-child {
+  margin: 0 0 15px 0;
+}
+
+.about__text :last-child {
+  margin: 15px 0 0 0;
+}
+
+.about:after {
+  content: '';
+  display: block;
+  margin: 0 0 95px 0;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
+  position: relative;
+  text-align: center;
+  padding: 0 0 30px 0;
+  font-family: Lato;
+}
+
+.title:after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  bottom: 0;
+  height: 1px;
+  left: 50%;
+  background-color: #000;
+  margin: 0 0 0 -50px;
+}
+
+.item-about__icon {
+  margin: 0 auto 40px auto;
+  border-radius: 50%;
+  width: 92px;
+  height: 92px;
+  border: 2px solid #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-about__title {
+  text-align: center;
+  color: #000;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 3.52px;
+  margin: 0 0 35px 0;
+  font-family: Lato;
+}
+
+.item-about__text {
+  color: #868585;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: center;
+  font-family: Lato;
+  font-weight: 100;
+}
+
+.portfolio__button {
+  border: 1px solid #000;
+}
+
+.portfolio .button__text {
+  color: #000000;
+}
+
+.portfolio__body {
+  background: #f3f3f3;
+}
+
+.portfolio__header::before {
+  content: '';
+  display: block;
+  margin: 0 0 107px 0;
+  height: 1px;
+}
+
+.portfolio__menu {
+  margin: 0 0 136px 0;
+}
+
+.portfolio__image :last-child {
+  margin: 0 auto;
+}
+
+.portfolio__image:after {
+  content: '';
+  display: block;
+  margin: 60px 0 0 0;
+}
+
+.portfolio__row {
+  margin: 0 auto 14px auto;
+  max-width: 1103px;
+}
+
+.portfolio__row :last-child {
+  margin: 0;
+  display: inline-block;
+}
+
+.portfolio__column {
+  width: 538px;
+  height: 365px;
+  background-color: #eaeaea;
+  display: inline-block;
+  margin: 0 23px 0 0;
+}

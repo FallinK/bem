@@ -1,0 +1,294 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Regular.eot');
+	src: local('☺'), url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.ttf') format('truetype'), url('../fonts/Lato-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-Black';
+	src: url('../fonts/Lato-Black.eot');
+	src: local('☺'), url('../fonts/Lato-Black.woff') format('woff'), url('../fonts/Lato-Black.ttf') format('truetype'), url('../fonts/Lato-Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.logo {
+	background: url('../img/BG-Header.jpg') -10px -120px no-repeat;
+	margin: 0;
+	&__body {
+		max-width: 754px;
+		margin: 0 auto;
+		padding: 150px 0 0 0;
+	}
+	&__picture {
+		text-align: center;
+		margin: 0 0 160px 0;
+	}
+	&__picture img {
+		width: 195px;
+		height: 123px;
+	}
+	&__title {
+		color: #ffffff;
+		font-family: "Lato";
+		text-align: center;
+		font-size: 26px;
+		letter-spacing: 4.15px;
+		position: relative;
+		& p:first-child {
+			color: #ffffff;
+			font-family: "Lato-Black";
+			font-size: 32px;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 5.43px;
+			margin: 0 0 10px 0;
+		}
+		& p:last-child {
+			margin: 0 0 275px 0;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100px;
+			bottom: -60px;
+			height: 2px;
+			left: 50%;
+			background-color: #fff;
+			margin: 0 0 0 -45px;
+		}
+	}
+	&__button {
+		border: 1px solid #fff;
+		&:after {
+			content: '';
+			display: block;
+			margin: 0 0 75px 0;
+		}
+	}
+	&__arrow {
+		width: 17px;
+		height: 10px;
+		padding: 0 0 150px 0;
+		margin: 0 auto;
+		&:before{
+			content: '';
+			display: block;
+			margin: 0 0 75px 0;
+		}
+	}
+}
+.button {
+	width: 182px;
+	height: 47px;
+	border: 1px solid #fff;
+	margin: 0 auto 0 auto;
+	&__text {
+		padding: 16px 0;
+		color: #ffffff;
+		font-family: Lato;
+		font-size: 16px;
+		font-weight: 400;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 0.67px;
+	}
+}
+.menu {
+	&__row {
+		max-width: 422px;
+		margin: 0 auto;
+		text-align: center;
+		:first-child {
+			margin: 0 20px 0 0;
+		}
+		:last-child {
+			margin: 0 0 0 20px;
+		}
+		&:before {
+			content: '';
+			margin: 22px 0 0 0;
+			display: block;
+		}
+	}
+
+	&__item {
+		display: inline-block;
+		margin: 0 20px;
+		max-width: 80px;
+		color: #3c3c3c;
+		font-family: Lato;
+		font-size: 15px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	.item-active {
+		color: #ada074;
+	}
+}
+.about {
+	&__header:before {
+		content: '';
+		margin: 0px 0 154px 0;
+		display: block;
+	}
+	&__body {
+		max-width: 823px;
+		margin: 0 auto;
+	}
+
+	&__header {
+		margin: 0 0 65px 0;
+	}
+
+	&__title {
+		margin: 0 0 30px 0;
+	}
+
+	&__row {
+		display: flex;
+		font-size: 0;
+		margin: 0 -15px;
+	}
+
+	&__column {
+		padding: 0 15px;
+		flex: 0 0 33.333%;
+	}
+	&__text {
+		color: #868585;
+		font-family: Lato;
+		font-weight: 300;
+		max-width: 700px;
+		text-align: center;
+		margin: 0 auto;
+		& p {
+			margin: 15px 0;
+			font-size: 14px;
+			font-weight: 300;
+		}
+		:first-child{
+			margin: 0 0 15px 0;
+		}
+		:last-child {
+			margin: 15px 0 0 0;
+		}
+	}
+	&:after {
+		 content: '';
+		 display: block;
+		 margin: 0 0 95px 0;
+	 }
+}
+.title {
+	font-size: 34px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 8.95px;
+	position: relative;
+	text-align: center;
+	padding: 0 0 30px 0;
+	font-family: Lato;
+	&:after{
+		content: '';
+		position: absolute;
+		width: 80px;
+		bottom: 0;
+		height: 1px;
+		left: 50%;
+		background-color: #000;
+		margin: 0 0 0 -50px;
+	}
+}
+.item-about {
+
+	&__icon {
+		margin: 0 auto 40px auto;
+		border-radius: 50%;
+		width: 92px;
+		height: 92px;
+		border: 2px solid #f1f1f1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__title {
+		text-align: center;
+		color: #000;
+		font-size: 22px;
+		text-transform: uppercase;
+		letter-spacing: 3.52px;
+		margin: 0 0 35px 0;
+		font-family: Lato;
+	}
+
+	&__text {
+		color: #868585;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 26px;
+		text-align: center;
+		font-family: Lato;
+		font-weight: 100;
+	}
+}
+.portfolio {
+
+	&__button {
+		border: 1px solid #000;
+	}
+
+	.button__text{
+		color: #000000;
+	}
+
+	&__body {
+		background: #f3f3f3;
+	}
+
+	&__header::before {
+		content: '';
+		display: block;
+		margin: 0 0 107px 0;
+		height: 1px;
+	}
+
+	&__menu {
+		margin: 0 0 136px 0;
+	}
+
+	&__image {
+		:last-child {
+			margin: 0 auto;
+		}
+		&:after {
+			content: '';
+			display: block;
+			margin: 60px 0 0 0;
+		}
+	}
+
+	&__row {
+		margin: 0 auto 14px auto;
+		max-width: 1103px;
+		:last-child {
+			margin: 0;
+			display: inline-block;
+		}
+	}
+
+	&__column {
+		width: 538px;
+		height: 365px;
+		background-color: #eaeaea;
+		display: inline-block;
+		margin: 0 23px 0 0;
+	}
+}
